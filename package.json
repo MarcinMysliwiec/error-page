@@ -1,0 +1,25 @@
+{
+  "name": "errors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "sass-dev": "sass --watch src/sass/main.scss public/css/style.css",
+    "sass-build": "sass src/sass/main.scss public/css/style.css --style compressed",
+    "babel-dev": "npx babel src/index.js --watch --out-file public/index.js",
+    "babel-build": "npx babel src/index.js --out-file public/index.js --presets minify",
+    "dev": "yarn sass-dev & yarn babel-dev",
+    "build": "yarn sass-build & yarn babel-build"
+  },
+  "dependencies": {
+    "gsap": "^3.9.1",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "babel-preset-minify": "^0.5.1"
+  }
+}
