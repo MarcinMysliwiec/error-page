@@ -5,10 +5,10 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
-    "sass-dev": "sass --watch src/sass/main.scss public/css/style.css",
-    "sass-build": "sass src/sass/main.scss public/css/style.css --style compressed",
-    "babel-dev": "npx babel src/index.js --watch --out-file public/index.js",
-    "babel-build": "npx babel src/index.js --out-file public/index.js --presets minify",
+    "sass-dev": "sass --watch src/sass/main.scss error/css/style.css",
+    "sass-build": "sass src/sass/main.scss error/css/style.css --style compressed",
+    "babel-dev": "npx babel src/index.js --watch --out-file error/index.js",
+    "babel-build": "npx babel src/index.js --out-file error/index.js --presets minify",
     "dev": "yarn sass-dev & yarn babel-dev",
     "build": "yarn sass-build & yarn babel-build"
   },
